@@ -5,7 +5,7 @@
     <div class="img-bg clipped absolute w-full h-full">
       <img
         class="absolute top-0 left-0 w-full h-full object-cover"
-        src="/_nuxt/assets/css/elec5.jpeg"
+        src="../../assets/css/elec5.jpeg"
         alt=""
       />
     </div>
