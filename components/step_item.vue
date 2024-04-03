@@ -23,4 +23,10 @@ const { step, index } = defineProps<{
 }>();
 </script>
 
-<style scoped></style>
+<style scoped>
+@media screen and (max-width: 767px) {
+  p {
+    text-align: center;
+  }
+}
+</style>

@@ -108,7 +108,7 @@ onClickOutside(header, () => {
 }
 
 .nav-item.active::before {
-  background-color: #0147a9;
+  background-color: transparent;
 }
 
 .hidden {

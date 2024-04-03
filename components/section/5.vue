@@ -1,8 +1,13 @@
 <template>
-  <ImageSection :image-url="imageUrl">
-    <template v-slot:title> Titre section 4 </template>
-    <template v-slot:content>
-      <div class="">
+  <div class="flex flex-col">
+    <h1 class="relative title w-full">
+      <slot name="title">Titre section 4</slot>
+    </h1>
+    <div class="image-section w-full flex">
+      <div class="image-container">
+        <img src="../../assets/css/elec3.jpg" alt="" />
+      </div>
+      <div class="test">
         <h3 class="w-full font-semibold my-0">
           Une mise en place simple & rapide
         </h3>
@@ -15,8 +20,8 @@
           />
         </div>
       </div>
-    </template>
-  </ImageSection>
+    </div>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -42,4 +47,19 @@ const steps = [
 ];
 </script>
 
-<style scoped></style>
+<style scoped>
+.image-section {
+  gap: 2.5rem; /* Adjust the value as needed */
+}
+
+/* Alternatively, you can add margin or padding to the individual elements */
+.image-container {
+  margin-right: 0; /* Adjust the value as needed */
+}
+
+@media screen and (max-width: 767px) {
+  p {
+    text-align: center;
+  }
+}
+</style>
